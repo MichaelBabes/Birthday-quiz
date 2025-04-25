@@ -49,12 +49,12 @@ let currentQ = 0;
 let score = 0;
 
 const themeMusic = {
-  "": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", // Default theme music
-  "dark-theme": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3", // Dark academia vibes
-  "bubbly-theme": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" // Bubbly happy tune
+  "": "https://cdn.pixabay.com/download/audio/2022/03/19/audio_2dde668d05.mp3?filename=happy-background-music-childrens-116144.mp3",
+  "dark-theme": "https://cdn.pixabay.com/download/audio/2023/06/29/audio_ceaf1b594e.mp3?filename=dark-minimal-background-ambient-music-147229.mp3",
+  "bubbly-theme": "https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bab.mp3?filename=cute-background-112188.mp3"
 };
 
-const loungeMusic = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"; // Lounge area music
+const loungeMusic = "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1259c54473.mp3?filename=lofi-study-112191.mp3";
 
 function toggleNote(id) {
   const element = document.getElementById(id);
@@ -247,15 +247,16 @@ function nextQuestion() {
           </div>
           <div id="lukas-wishes" class="note-container">
             <strong>Dear Ece,</strong><br><br>
-            Here's a special birthday link just for you: <a href="https://example.com/your-special-surprise" target="_blank">Click for Birthday Surprise!</a><br><br>
-            My wishes for you are as golden as a labrador's heart...<br>
-            May your thesis flow as smoothly as Ares' fur,<br>
-            Your ideas shine as bright as his eyes,<br>
-            And your determination be as strong as his spirit.<br><br>
-            Remember our adventures together,<br>
-            Like that time we [Insert memory here]<br>
-            And when we [Another special moment]<br><br>
-            You're not just brilliant, you're also [special quality].<br>
+            Here's a special birthday surprise just for you: <a href="YOUR_SPECIAL_LINK_HERE" target="_blank">🎁 Click to see your special surprise! 🎁</a><br><br>
+            My wishes for you shine brighter than the stars...<br>
+            Each thought carefully crafted with love,<br>
+            Like golden threads weaving through time.<br><br>
+            Through every challenge and triumph,<br>
+            Your strength never ceases to amaze.<br>
+            Your laughter lights up the darkest rooms,<br>
+            And your determination moves mountains.<br><br>
+            [ADD YOUR PERSONAL MESSAGE HERE]<br><br>
+            P.S. Remember that time when... [ADD SPECIAL MEMORY HERE]<br>
             Keep being amazing!<br><br>
             With love,<br>
             Luka 🎉🐕
