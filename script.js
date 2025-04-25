@@ -154,6 +154,9 @@ function loadQuestion() {
   }
 }
 
+let themeAudio = new Audio();
+themeAudio.loop = true;
+
 function checkAnswer(answer) {
   const q = questions[currentQ];
   const feedback = document.getElementById("feedback");
@@ -161,6 +164,8 @@ function checkAnswer(answer) {
   if (answer === q.correct) {
     const randomRemark = correctAnswerRemarks[Math.floor(Math.random() * correctAnswerRemarks.length)];
     feedback.textContent = randomRemark;
+    feedback.classList.add('correct-answer');
+    setTimeout(() => feedback.classList.remove('correct-answer'), 500);
     score++;
     setTimeout(nextQuestion, 2000);
   } else {
