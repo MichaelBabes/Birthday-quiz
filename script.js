@@ -36,11 +36,11 @@ const questions = [
   {
     text: "What is Luka's most iconic trait?",
     options: ["His humility", "His overwhelming handsomeness", "His overbearing charm","His massive glutes"],
-    correct: "Humilty",
+    correct: "His humilty",
     snarks: {
       "His overwhelming handsomeness": "Won't argue with you there.",
       "His overbearing charm": "Aww thanks babe!",
-      "His massive glutes":"You view me as a piece of meat smh."
+      "His massive glutes":"You view me as a piece of meat smh.."
     }
   },
   {
@@ -58,7 +58,7 @@ let currentQ = 0;
 let score = 0;
 
 const themeMusic = {
-  "default": "https://cdn.pixabay.com/download/audio/2024/01/02/audio_abcdef1234567890abcdef.mp3?filename=smooth-jazz-a-girl-from-near-approximately-ipanema-178711.mp3",
+  "": "https://cdn.pixabay.com/download/audio/2024/01/02/audio_abcdef1234567890abcdef.mp3?filename=smooth-jazz-a-girl-from-near-approximately-ipanema-178711.mp3",
   "dark-theme": "https://cdn.pixabay.com/download/audio/2023/06/29/audio_ceaf1b594e.mp3?filename=dark-minimal-background-ambient-music-147229.mp3",
   "bubbly-theme": "https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bab.mp3?filename=cute-background-112188.mp3"
 };
@@ -99,7 +99,7 @@ function updateThemeMusic() {
 
 const themeRemarks = {
   "": "Back to vanilla? How... predictably bland 🙄",
-  "dark-theme": "Ooh, someone's channeling their inner Victorian poet 📚",
+  "dark-theme": "Another sad birthday huh?",
   "bubbly-theme": "Pink overload! My eyes! MY EYES! 🎀"
 };
 
@@ -109,7 +109,7 @@ const correctAnswerRemarks = [
   "Correct! Want a cookie? 🍪",
   "*slow clap* Bravo! 👏",
   "Ding ding ding! We have a winner! 🏆",
-  "Not bad... for a human 😏",
+  "Not bad...",
   "Correct! Your thesis advisor would be proud! 📚"
 ];
 
