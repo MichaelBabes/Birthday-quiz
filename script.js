@@ -207,9 +207,10 @@ function nextQuestion() {
         </div>
         <div id="birthday-note" class="note-container">
           Dearest Ece,<br><br>
-          On this special day, we celebrate not just another year of your amazing existence, but your incredible journey through academia! May your thesis writing be as brilliant as your smile, and your research as impactful as your presence in our lives. Remember: you're not just writing a thesis, you're making history! 🌟<br><br>
-          With love and admiration,<br>
-          Your biggest fan 🎉
+          <br><br> I know you're currently buried under academic chaos, but let’s not forget—today’s about you, not citations or formatting nightmares. You’ve made it this far with sheer brainpower, petty spite, and an unhealthy amount of tiramisu dreams. Respect.
+          <br><br> May your paragraphs behave, your procrastination be productive, and your thesis end with fewer tears than expected. You’re doing amazing—even if your laptop disagrees.
+          <br><br> Now go enjoy your day. You’ve earned it (and maybe even a nap).
+          <br><br> —Luka (still me, unfortunately)
         </div>
 
         <div class="note" onclick="this.nextElementSibling.classList.toggle('hidden')">
