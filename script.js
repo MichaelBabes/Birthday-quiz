@@ -38,9 +38,9 @@ const questions = [
     options: ["His humility", "His overwhelming handsomeness", "His overbearing charm","His massive glutes"],
     correct: "Humilty",
     snarks: {
-      "Handsomeness": "Won't argue with you there.",
+      "His overwhelming handsomeness": "Won't argue with you there.",
       "His overbearing charm": "Aww thanks babe!",
-      "Massive glutes":"You view me as a piece of meat smh."
+      "His massive glutes":"You view me as a piece of meat smh."
     }
   },
   {
