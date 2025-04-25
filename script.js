@@ -20,7 +20,7 @@ const questions = [
     text: "Rate these games in order from best to worst:",
     type: "sequence",
     items: ["Lethal Company", "Cult of the Lamb", "R.E.P.O", "CS2"],
-    correct: ["Lethal Company", "R.E.P.O", "CS2","Cult of the Lamb"],
+    correct: ["Lethal Company", "CS2", "R.E.P.O", "Cult of the Lamb"],
     snark: "KKhm, this answer does not have enough ME in it :c."
   },
   {
