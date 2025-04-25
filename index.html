@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <input type="range" class="volume-control" min="0" max="100" value="50" oninput="themeAudio.volume = this.value/100">
+  <button id="lukas-wishes-trigger" onclick="showPasswordPrompt()"></button>
   <div id="theme-switcher">
     <label for="theme">Theme:</label>
     <select id="theme" onchange="setTheme(this.value)">
