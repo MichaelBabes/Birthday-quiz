@@ -1,3 +1,4 @@
+
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
@@ -25,11 +26,66 @@ button {
 .dark-theme {
   --bg-color: #1e1e2f;
   --text-color: #f1e9db;
+  background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1600');
+  background-size: cover;
+  background-blend-mode: overlay;
 }
 
 .bubbly-theme {
   --bg-color: #ffe4f0;
   --text-color: #5c247a;
+  background-image: url('https://images.unsplash.com/photo-1528190336454-13cd56b45b5a?w=1600');
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+.completion-area {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.completion-area h3 {
+  color: #ff69b4;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.completion-area audio {
+  width: 100%;
+  margin: 1em 0;
+  border-radius: 25px;
+}
+
+.note {
+  background: linear-gradient(145deg, #fff9c4, #fff176);
+  padding: 1.5em;
+  margin: 1.5em 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1em;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.note:hover {
+  transform: scale(1.02);
+}
+
+.hidden {
+  display: none;
 }
 
 #theme-switcher {
