@@ -87,14 +87,12 @@ function showPasswordPrompt() {
 function updateThemeMusic() {
   const theme = document.body.className || "";
   const musicUrl = themeMusic[theme];
-  const musicContainer = document.getElementById('theme-music');
-  if (musicContainer) {
-    musicContainer.innerHTML = `
-      <audio controls autoplay loop>
-        <source src="${musicUrl}" type="audio/mp3">
-      </audio>
-    `;
-  }
+
+  themeAudio.src = musicUrl;
+  themeAudio.volume = 0.2; // Set the volume lower
+  themeAudio.play().catch(e => {
+    console.log("Autoplay blocked until interaction");
+  });
 }
 
 const themeRemarks = {
