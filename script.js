@@ -1,46 +1,55 @@
 
 const questions = [
   {
-    text: "What's 2+2?",
-    options: ["3", "4", "5"],
-    correct: "4",
+    text: "Rate hitting glutes from 1 to 10",
+    options: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    correct: "10",
     snarks: {
-      "3": "Math isn't your strong suit, huh?",
-      "5": "Getting ahead of yourself there!"
+      "1": "Really? But that's the only thing you're good for smh",
+      "2": "More like your GPA if you dont hit glutes more often",
+      "3": "I'm not your gym buddy after this",
+      "4": "C'mon give yourself more credit",
+      "5": "I mean, you're still sad",
+      "6": "My wittle goomba",
+      "7": "You gotta hit them glutes more often",
+      "8": "Are we still doing this?",
+      "9": "Almost 3 levels below my confidence",
     }
   },
   {
-    text: "Which came first?",
+    text: "Rate in order from best to worst",
     type: "sequence",
-    items: ["Dinosaurs", "Pyramids", "Internet"],
-    correct: ["Dinosaurs", "Pyramids", "Internet"],
-    snark: "Time isn't that complicated... or is it?"
+    items: ["Lethal Company", "Cult of the Lamb", "R.E.P.O, CS2"],
+    correct: ["Lethal Company", "R.E.P.O", "CS2"],
+    snark: "KKhm, this answer does not have enough ME in it :c."
   },
   {
-    text: "What's the capital of France?",
-    options: ["London", "Berlin", "Paris"],
-    correct: "Paris",
+    text: "Who would you share tiramisu with?",
+    options: ["Mom", "Luka", "That one hot bartender","Your thesis advisor"],
+    correct: "Luka",
     snarks: {
-      "London": "Wrong country, but A for effort!",
-      "Berlin": "Geography isn't your thing, is it?"
+      "Mom": "I mean who's more important c'mon..",
+      "That one hot bartender": "Can't argue with you there, but still wrong :D.",
+      "Your thesis advisor": "Really? Over me?? Smh"
     }
   },
   {
-    text: "Complete the sequence: 2, 4, 8, __",
-    options: ["10", "16", "12"],
-    correct: "16",
+    text: "What is Luka's most iconic trait?",
+    options: ["Humility", "Handsomeness", "His overbearing charm","Massive glutes"],
+    correct: "Humilty",
     snarks: {
-      "10": "Think exponentially!",
-      "12": "Close, but no cigar!"
+      "Handsomeness": "Won't argue with you there.",
+      "His overbearing charm": "Close, but no cigar!",
+      "Massive glutes":"You wiev me as a piece of meat smh"
     }
   },
   {
-    text: "Which planet is closest to the Sun?",
-    options: ["Venus", "Mercury", "Mars"],
-    correct: "Mercury",
+    text: "Choose an emotional support item:",
+    options: ["Weighted blanket", "Oriflame’s voice notes", "A big mug of tea"],
+    correct: "Oriflame’s voice notes",
     snarks: {
-      "Venus": "Hot take, but wrong!",
-      "Mars": "Not even close!"
+      "Weighted blanket": "Hot take, but wrong!",
+      "A big mug of tea": "Not even close!"
     }
   }
 ];
