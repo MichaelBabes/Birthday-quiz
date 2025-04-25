@@ -26,10 +26,40 @@ button {
 .dark-theme {
   --bg-color: #1e1e2f;
   --text-color: #f1e9db;
-  background-image: url('https://images.pexels.com/photos/2078126/pexels-photo-2078126.jpeg');
+  background-image: url('https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg');
   background-size: cover;
   background-blend-mode: overlay;
   position: relative;
+}
+
+@keyframes correct-answer {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.correct-answer {
+  animation: correct-answer 0.5s ease-in-out;
+}
+
+.volume-control {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  opacity: 0.7;
+  z-index: 1000;
+}
+
+#lukas-wishes-trigger {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
 }
 
 .dark-theme::before {
