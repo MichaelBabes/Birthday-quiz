@@ -315,3 +315,4 @@ function handleDrop(e) {
 }
 
 loadQuestion();
+updateThemeMusic();
