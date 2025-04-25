@@ -117,7 +117,6 @@ function setTheme(theme) {
     remarkElement.textContent = themeRemarks[theme] || "";
     setTimeout(() => remarkElement.textContent = "", 3000);
   }
-  updateThemeMusic();
 }
 
 function loadQuestion() {
@@ -202,12 +201,6 @@ function nextQuestion() {
       <div class="completion-area">
         <h3>✨ Welcome to Ece's Lounge! 🎈</h3>
         <div id="theme-music"></div>
-        <div class="lounge-music">
-          <p>🎵 Lounge Music</p>
-          <audio controls autoplay loop>
-            <source src="${loungeMusic}" type="audio/mp3">
-          </audio>
-        </div>
         
         <div class="note" onclick="toggleNote('birthday-note')">
           💝 Click to open: Happy Birthday Note!
