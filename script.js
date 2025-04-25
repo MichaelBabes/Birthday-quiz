@@ -13,7 +13,7 @@ const questions = [
       "6": "My wittle goomba",
       "7": "You gotta hit them glutes more often",
       "8": "Are we still doing this?",
-      "9": "Almost 3 levels below my confidence",
+      "9": "Almost 3 levels below my confidence"
     }
   },
   {
