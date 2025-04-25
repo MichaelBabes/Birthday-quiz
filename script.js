@@ -57,13 +57,9 @@ const questions = [
 let currentQ = 0;
 let score = 0;
 
-const themeMusic = {
-  "": "https://cdn.pixabay.com/download/audio/2024/01/02/audio_abcdef1234567890abcdef.mp3?filename=smooth-jazz-a-girl-from-near-approximately-ipanema-178711.mp3",
-  "dark-theme": "https://cdn.pixabay.com/download/audio/2023/06/29/audio_ceaf1b594e.mp3?filename=dark-minimal-background-ambient-music-147229.mp3",
-  "bubbly-theme": "https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bab.mp3?filename=cute-background-112188.mp3"
-};
-
-const loungeMusic = "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1259c54473.mp3?filename=lofi-study-112191.mp3";
+const backgroundAudio = new Audio("https://cdn.pixabay.com/download/audio/2022/05/27/audio_1259c54473.mp3?filename=lofi-study-112191.mp3");
+backgroundAudio.loop = true;
+backgroundAudio.volume = 0.2; // nice and quiet
 
 function toggleNote(id) {
   const element = document.getElementById(id);
@@ -315,5 +311,11 @@ function handleDrop(e) {
   dragged.classList.remove('dragging');
 }
 
+window.addEventListener("load", () => {
+  backgroundAudio.play().catch(() => {
+    // If autoplay is blocked, you could show a play button or leave it muted
+    console.log("Autoplay blocked. User interaction required.");
+  });
+});
 loadQuestion();
-updateThemeMusic();
+
