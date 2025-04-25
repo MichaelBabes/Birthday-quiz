@@ -1,4 +1,3 @@
-
 const questions = [
   {
     text: "What's 2+2?",
@@ -148,38 +147,47 @@ function nextQuestion() {
       <h2>Quiz Complete! 🎉</h2>
       <p>You scored ${score} out of ${questions.length}!</p>
       <div class="completion-area">
-        <h3>Welcome to Ece's Thesis Survival Lounge! 🎈</h3>
+        <h3>✨ Welcome to Ece's Thesis Survival Lounge! 🎈</h3>
         <audio controls autoplay loop>
           <source src="https://www.chosic.com/wp-content/uploads/2020/05/Raindrops.mp3" type="audio/mp3">
         </audio>
         
         <div class="note" onclick="this.nextElementSibling.classList.toggle('hidden')">
-          📝 Click to open: Happy Birthday Note!
+          💝 Click to open: Happy Birthday Note!
         </div>
         <div class="hidden">
-          Dear birthday person, may your day be as amazing as you are! 
-          Remember: thesis writing is temporary, but being awesome is forever! 🎉
+          Dearest Ece,<br><br>
+          On this special day, we celebrate not just another year of your amazing existence, but your incredible journey through academia! May your thesis writing be as brilliant as your smile, and your research as impactful as your presence in our lives. Remember: you're not just writing a thesis, you're making history! 🌟<br><br>
+          With love and admiration,<br>
+          Your biggest fan 🎉
         </div>
 
         <div class="note" onclick="this.nextElementSibling.classList.toggle('hidden')">
-          🍳 Click to open: Emergency Comfort Food Recipe
+          🍳 Click to open: Emergency Comfort Food Recipes
         </div>
         <div class="hidden">
-          Quick 5-min Chocolate Mug Cake:<br>
+          <strong>5-min Thesis Crisis Chocolate Mug Cake:</strong><br>
           4 tbsp flour, 4 tbsp sugar, 2 tbsp cocoa<br>
           1 egg, 3 tbsp milk, 3 tbsp oil<br>
-          Mix & microwave for 1.5 mins. Emergency chocolate fix achieved!
+          Mix & microwave for 1.5 mins. Add ice cream for extra comfort! 🍫<br><br>
+          <strong>Instant Mood Lifter Hot Chocolate:</strong><br>
+          2 tbsp cocoa, 2 tbsp sugar, dash of cinnamon<br>
+          Hot milk, marshmallows<br>
+          Mix & enjoy while editing that tough chapter! ☕
         </div>
 
         <div class="note" onclick="this.nextElementSibling.classList.toggle('hidden')">
-          📚 Click to open: Thesis Survival Pack
+          📚 Click to open: The Ultimate Thesis Survival Pack
         </div>
         <div class="hidden">
-          1. Emergency coffee stash location<br>
-          2. Meditation break reminder<br>
-          3. Permission to take a nap<br>
-          4. One free "my brain isn't working" card<br>
-          5. Virtual hug coupon (unlimited uses)
+          <strong>Your Academic Survival Kit:</strong><br>
+          🎯 1. Emergency coffee stash coordinates: Check the secret drawer!<br>
+          🧘‍♀️ 2. Mandatory meditation breaks (every 2 hours of writing)<br>
+          😴 3. Official permission slip for power naps<br>
+          🧠 4. "My brain needs a reboot" free pass (valid anytime)<br>
+          🤗 5. Unlimited virtual hugs subscription<br>
+          📝 6. "You've got this!" reminder (use as needed)<br>
+          🌈 7. Instant stress-relief dance party protocol
         </div>
       </div>`;
   } else {
