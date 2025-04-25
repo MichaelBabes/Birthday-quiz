@@ -49,10 +49,12 @@ let currentQ = 0;
 let score = 0;
 
 const themeMusic = {
-  "": "https://www.chosic.com/wp-content/uploads/2020/05/Raindrops.mp3",
-  "dark-theme": "https://www.chosic.com/wp-content/uploads/2020/05/The-Ethereal-World.mp3",
-  "bubbly-theme": "https://www.chosic.com/wp-content/uploads/2020/05/Sweet-Love.mp3"
+  "": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", // Default theme music
+  "dark-theme": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3", // Dark academia vibes
+  "bubbly-theme": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" // Bubbly happy tune
 };
+
+const loungeMusic = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"; // Lounge area music
 
 function toggleNote(id) {
   const element = document.getElementById(id);
@@ -189,6 +191,12 @@ function nextQuestion() {
       <div class="completion-area">
         <h3>✨ Welcome to Ece's Lounge! 🎈</h3>
         <div id="theme-music"></div>
+        <div class="lounge-music">
+          <p>🎵 Lounge Music</p>
+          <audio controls autoplay loop>
+            <source src="${loungeMusic}" type="audio/mp3">
+          </audio>
+        </div>
         
         <div class="note" onclick="toggleNote('birthday-note')">
           💝 Click to open: Happy Birthday Note!
@@ -238,12 +246,19 @@ function nextQuestion() {
             <button onclick="checkPassword()">Submit</button>
           </div>
           <div id="lukas-wishes" class="note-container">
-            <strong>Dear Ece,</strong><br>
+            <strong>Dear Ece,</strong><br><br>
+            Here's a special birthday link just for you: <a href="https://example.com/your-special-surprise" target="_blank">Click for Birthday Surprise!</a><br><br>
             My wishes for you are as golden as a labrador's heart...<br>
             May your thesis flow as smoothly as Ares' fur,<br>
             Your ideas shine as bright as his eyes,<br>
-            And your determination be as strong as his spirit.<br>
-            Happy Birthday! 🎉🐕
+            And your determination be as strong as his spirit.<br><br>
+            Remember our adventures together,<br>
+            Like that time we [Insert memory here]<br>
+            And when we [Another special moment]<br><br>
+            You're not just brilliant, you're also [special quality].<br>
+            Keep being amazing!<br><br>
+            With love,<br>
+            Luka 🎉🐕
           </div>
         </div>
       </div>`;
