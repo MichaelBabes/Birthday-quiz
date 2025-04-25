@@ -1,3 +1,4 @@
+
 const questions = [
   {
     text: "What's 2+2?",
@@ -48,10 +49,20 @@ let currentQ = 0;
 let score = 0;
 
 const themeRemarks = {
-  "": "Back to boring, I see...",
-  "dark-theme": "Ah, feeling edgy today?",
-  "bubbly-theme": "Really? I guess it's a sad birthday all over again..."
+  "": "Back to vanilla? How... predictably bland 🙄",
+  "dark-theme": "Ooh, someone's channeling their inner Victorian poet 📚",
+  "bubbly-theme": "Pink overload! My eyes! MY EYES! 🎀"
 };
+
+const correctAnswerRemarks = [
+  "Look who actually got one right! 🎉",
+  "Well, well, well... somebody's been paying attention! 👏",
+  "Correct! Want a cookie? 🍪",
+  "*slow clap* Bravo! 👏",
+  "Ding ding ding! We have a winner! 🏆",
+  "Not bad... for a human 😏",
+  "Correct! Your thesis advisor would be proud! 📚"
+];
 
 function setTheme(theme) {
   document.body.className = theme;
@@ -107,9 +118,10 @@ function checkAnswer(answer) {
   const feedback = document.getElementById("feedback");
   
   if (answer === q.correct) {
-    feedback.textContent = "Correct! 🎉";
+    const randomRemark = correctAnswerRemarks[Math.floor(Math.random() * correctAnswerRemarks.length)];
+    feedback.textContent = randomRemark;
     score++;
-    setTimeout(nextQuestion, 1000);
+    setTimeout(nextQuestion, 2000);
   } else {
     feedback.textContent = q.snarks[answer] || "Nope, try again!";
   }
@@ -132,9 +144,44 @@ function checkSequence() {
 function nextQuestion() {
   currentQ++;
   if (currentQ >= questions.length) {
-    document.getElementById("quiz-container").innerHTML = 
-      `<h2>Quiz Complete! 🎉</h2>
-       <p>You scored ${score} out of ${questions.length}!</p>`;
+    document.getElementById("quiz-container").innerHTML = `
+      <h2>Quiz Complete! 🎉</h2>
+      <p>You scored ${score} out of ${questions.length}!</p>
+      <div class="completion-area">
+        <h3>Welcome to Ece's Thesis Survival Lounge! 🎈</h3>
+        <audio controls autoplay loop>
+          <source src="https://www.chosic.com/wp-content/uploads/2020/05/Raindrops.mp3" type="audio/mp3">
+        </audio>
+        
+        <div class="note" onclick="this.nextElementSibling.classList.toggle('hidden')">
+          📝 Click to open: Happy Birthday Note!
+        </div>
+        <div class="hidden">
+          Dear birthday person, may your day be as amazing as you are! 
+          Remember: thesis writing is temporary, but being awesome is forever! 🎉
+        </div>
+
+        <div class="note" onclick="this.nextElementSibling.classList.toggle('hidden')">
+          🍳 Click to open: Emergency Comfort Food Recipe
+        </div>
+        <div class="hidden">
+          Quick 5-min Chocolate Mug Cake:<br>
+          4 tbsp flour, 4 tbsp sugar, 2 tbsp cocoa<br>
+          1 egg, 3 tbsp milk, 3 tbsp oil<br>
+          Mix & microwave for 1.5 mins. Emergency chocolate fix achieved!
+        </div>
+
+        <div class="note" onclick="this.nextElementSibling.classList.toggle('hidden')">
+          📚 Click to open: Thesis Survival Pack
+        </div>
+        <div class="hidden">
+          1. Emergency coffee stash location<br>
+          2. Meditation break reminder<br>
+          3. Permission to take a nap<br>
+          4. One free "my brain isn't working" card<br>
+          5. Virtual hug coupon (unlimited uses)
+        </div>
+      </div>`;
   } else {
     loadQuestion();
   }
