@@ -46,7 +46,7 @@ const questions = [
   {
     text: "Choose an emotional support item:",
     options: ["Weighted blanket", "Luka’s voice messages", "A big mug of tea"],
-    correct: "Oriflame’s voice notes",
+    correct: "Luka’s voice messages",
     snarks: {
       "Weighted blanket": "You're 24.",
       "A big mug of tea": "You'll drown."
