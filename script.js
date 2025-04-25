@@ -1,3 +1,4 @@
+
 const questions = [
   {
     text: "What's 2+2?",
@@ -47,6 +48,44 @@ const questions = [
 let currentQ = 0;
 let score = 0;
 
+const themeMusic = {
+  "": "https://www.chosic.com/wp-content/uploads/2020/05/Raindrops.mp3",
+  "dark-theme": "https://www.chosic.com/wp-content/uploads/2020/05/The-Ethereal-World.mp3",
+  "bubbly-theme": "https://www.chosic.com/wp-content/uploads/2020/05/Sweet-Love.mp3"
+};
+
+function toggleNote(id) {
+  const element = document.getElementById(id);
+  element.classList.toggle('visible');
+}
+
+function checkPassword() {
+  const input = document.getElementById('secret-password');
+  if (input.value.toLowerCase() === 'ares') {
+    document.getElementById('lukas-wishes').classList.add('visible');
+    document.getElementById('password-prompt').classList.remove('visible');
+  } else {
+    alert('Wrong answer! Try again.');
+  }
+}
+
+function showPasswordPrompt() {
+  document.getElementById('password-prompt').classList.add('visible');
+}
+
+function updateThemeMusic() {
+  const theme = document.body.className || "";
+  const musicUrl = themeMusic[theme];
+  const musicContainer = document.getElementById('theme-music');
+  if (musicContainer) {
+    musicContainer.innerHTML = `
+      <audio controls autoplay loop>
+        <source src="${musicUrl}" type="audio/mp3">
+      </audio>
+    `;
+  }
+}
+
 const themeRemarks = {
   "": "Back to vanilla? How... predictably bland 🙄",
   "dark-theme": "Ooh, someone's channeling their inner Victorian poet 📚",
@@ -70,6 +109,7 @@ function setTheme(theme) {
     remarkElement.textContent = themeRemarks[theme] || "";
     setTimeout(() => remarkElement.textContent = "", 3000);
   }
+  updateThemeMusic();
 }
 
 function loadQuestion() {
@@ -147,15 +187,13 @@ function nextQuestion() {
       <h2>Quiz Complete! 🎉</h2>
       <p>You scored ${score} out of ${questions.length}!</p>
       <div class="completion-area">
-        <h3>✨ Welcome to Ece's Thesis Survival Lounge! 🎈</h3>
-        <audio controls autoplay loop>
-          <source src="https://www.chosic.com/wp-content/uploads/2020/05/Raindrops.mp3" type="audio/mp3">
-        </audio>
+        <h3>✨ Welcome to Ece's Lounge! 🎈</h3>
+        <div id="theme-music"></div>
         
-        <div class="note" onclick="this.nextElementSibling.classList.toggle('hidden')">
+        <div class="note" onclick="toggleNote('birthday-note')">
           💝 Click to open: Happy Birthday Note!
         </div>
-        <div class="hidden">
+        <div id="birthday-note" class="note-container">
           Dearest Ece,<br><br>
           On this special day, we celebrate not just another year of your amazing existence, but your incredible journey through academia! May your thesis writing be as brilliant as your smile, and your research as impactful as your presence in our lives. Remember: you're not just writing a thesis, you're making history! 🌟<br><br>
           With love and admiration,<br>
@@ -188,6 +226,25 @@ function nextQuestion() {
           🤗 5. Unlimited virtual hugs subscription<br>
           📝 6. "You've got this!" reminder (use as needed)<br>
           🌈 7. Instant stress-relief dance party protocol
+        </div>
+
+        <div id="secret-area">
+          <div class="note" onclick="showPasswordPrompt()">
+            🔒 Luka's Wishes (Password Protected)
+          </div>
+          <div id="password-prompt" class="password-prompt">
+            <p>Hint: What's my favourite labrador's name? 🐕</p>
+            <input type="password" id="secret-password">
+            <button onclick="checkPassword()">Submit</button>
+          </div>
+          <div id="lukas-wishes" class="note-container">
+            <strong>Dear Ece,</strong><br>
+            My wishes for you are as golden as a labrador's heart...<br>
+            May your thesis flow as smoothly as Ares' fur,<br>
+            Your ideas shine as bright as his eyes,<br>
+            And your determination be as strong as his spirit.<br>
+            Happy Birthday! 🎉🐕
+          </div>
         </div>
       </div>`;
   } else {
