@@ -5,22 +5,22 @@ const questions = [
     options: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
     correct: "10",
     snarks: {
-      "1": "Really? But that's the only thing you're good for smh",
-      "2": "More like your GPA if you dont hit glutes more often",
-      "3": "I'm not your gym buddy after this",
-      "4": "C'mon give yourself more credit",
-      "5": "I mean, you're still sad",
-      "6": "My wittle goomba",
-      "7": "You gotta hit them glutes more often",
-      "8": "Are we still doing this?",
-      "9": "Almost 3 levels below my confidence"
+      "1": "Really? But that's the only thing you're good for smh.",
+      "2": "More like your GPA if you dont hit glutes more often.",
+      "3": "I'm not your gym buddy after this.",
+      "4": "C'mon give yourself more credit.",
+      "5": "I mean, you're still sad.",
+      "6": "My wittle goomba.",
+      "7": "You gotta hit them glutes more often.",
+      "8": "Are we still doing this.?",
+      "9": "Almost 7 levels below my level of glute confidence."
     }
   },
   {
-    text: "Rate in order from best to worst",
+    text: "Rate these games in order from best to worst:",
     type: "sequence",
-    items: ["Lethal Company", "Cult of the Lamb", "R.E.P.O, CS2"],
-    correct: ["Lethal Company", "R.E.P.O", "CS2"],
+    items: ["Lethal Company", "Cult of the Lamb", "R.E.P.O", "CS2"],
+    correct: ["Lethal Company", "R.E.P.O", "CS2","Cult of the Lamb"],
     snark: "KKhm, this answer does not have enough ME in it :c."
   },
   {
@@ -35,21 +35,21 @@ const questions = [
   },
   {
     text: "What is Luka's most iconic trait?",
-    options: ["Humility", "Handsomeness", "His overbearing charm","Massive glutes"],
+    options: ["His humility", "His overwhelming handsomeness", "His overbearing charm","His massive glutes"],
     correct: "Humilty",
     snarks: {
       "Handsomeness": "Won't argue with you there.",
-      "His overbearing charm": "Close, but no cigar!",
-      "Massive glutes":"You wiev me as a piece of meat smh"
+      "His overbearing charm": "Aww thanks babe!",
+      "Massive glutes":"You view me as a piece of meat smh."
     }
   },
   {
     text: "Choose an emotional support item:",
-    options: ["Weighted blanket", "Oriflame’s voice notes", "A big mug of tea"],
+    options: ["Weighted blanket", "Luka’s voice messages", "A big mug of tea"],
     correct: "Oriflame’s voice notes",
     snarks: {
-      "Weighted blanket": "Hot take, but wrong!",
-      "A big mug of tea": "Not even close!"
+      "Weighted blanket": "You're 24.",
+      "A big mug of tea": "You'll drown."
     }
   }
 ];
@@ -58,7 +58,7 @@ let currentQ = 0;
 let score = 0;
 
 const themeMusic = {
-  "": "https://cdn.pixabay.com/download/audio/2022/03/19/audio_2dde668d05.mp3?filename=happy-background-music-childrens-116144.mp3",
+  "default": "https://cdn.pixabay.com/download/audio/2024/01/02/audio_abcdef1234567890abcdef.mp3?filename=smooth-jazz-a-girl-from-near-approximately-ipanema-178711.mp3",
   "dark-theme": "https://cdn.pixabay.com/download/audio/2023/06/29/audio_ceaf1b594e.mp3?filename=dark-minimal-background-ambient-music-147229.mp3",
   "bubbly-theme": "https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bab.mp3?filename=cute-background-112188.mp3"
 };
