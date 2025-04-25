@@ -1,0 +1,40 @@
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Georgia', serif;
+  padding: 2em;
+  transition: all 0.3s;
+}
+
+button {
+  margin: 0.5em;
+  padding: 0.6em 1em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#next-btn {
+  display: none;
+}
+
+.dark-theme {
+  --bg-color: #1e1e2f;
+  --text-color: #f1e9db;
+}
+
+.bubbly-theme {
+  --bg-color: #ffe4f0;
+  --text-color: #5c247a;
+}
+
+#theme-switcher {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
