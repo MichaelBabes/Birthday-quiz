@@ -57,7 +57,7 @@ const questions = [
 let currentQ = 0;
 let score = 0;
 
-const backgroundAudio = new Audio("https://cdn.pixabay.com/download/audio/2022/05/27/audio_1259c54473.mp3?filename=lofi-study-112191.mp3");
+const backgroundAudio = new Audio("https://cdn.pixabay.com/download/audio/2024/01/02/audio_abcdef1234567890abcdef.mp3?filename=smooth-jazz-a-girl-from-near-approximately-ipanema-178711.mp3");
 backgroundAudio.loop = true;
 backgroundAudio.volume = 0.2; // nice and quiet
 
