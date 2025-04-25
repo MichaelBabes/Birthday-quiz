@@ -36,7 +36,7 @@ const questions = [
   {
     text: "What is Luka's most iconic trait?",
     options: ["His humility", "His overwhelming handsomeness", "His overbearing charm","His massive glutes"],
-    correct: "His humilty",
+    correct: "His humility",
     snarks: {
       "His overwhelming handsomeness": "Won't argue with you there.",
       "His overbearing charm": "Aww thanks babe!",
