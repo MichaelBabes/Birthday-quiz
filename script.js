@@ -88,11 +88,14 @@ function updateThemeMusic() {
   const theme = document.body.className || "";
   const musicUrl = themeMusic[theme];
 
-  themeAudio.src = musicUrl;
-  themeAudio.volume = 0.2; // Set the volume lower
-  themeAudio.play().catch(e => {
-    console.log("Autoplay blocked until interaction");
-  });
+  if (themeAudio.src !== musicUrl) {
+    themeAudio.pause();               // Stop the old song
+    themeAudio.src = musicUrl;        // Update to new song
+    themeAudio.volume = 0.2;          // Set volume lower
+    themeAudio.play().catch(() => {
+      console.log("Autoplay blocked until user interacts.");
+    });
+  }
 }
 
 const themeRemarks = {
