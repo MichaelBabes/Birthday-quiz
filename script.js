@@ -68,7 +68,7 @@ backgroundAudio.loop = true;
 backgroundAudio.volume = 0.2; // nice and quiet
 
 // == Luka’s voice message hookup ==
-const voiceAudio = new Audio("https://raw.githubusercontent.com/MichaelBabes/birthday-music/raw/refs/heads/main/2025-04-26%2014-13-37.mp3");
+const voiceAudio = new Audio("https://raw.githubusercontent.com/MichaelBabes/birthday-music/main/2025-04-26%2014-13-37.mp3");
 voiceAudio.volume = 0.8;
 
 function toggleNote(id) {
