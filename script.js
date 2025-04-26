@@ -57,7 +57,7 @@ const questions = [
 let currentQ = 0;
 let score = 0;
 
-const backgroundAudio = new Audio("https://www.dropbox.com/scl/fi/343hmi6y6inp6l7vexjzo/The-Girl-From-Ipanema-Instrumental.mp3?rlkey=ikfouvjgieep1zt0n2zmmkvop&st=lh2y0cxi&dl=1");
+const backgroundAudio = new Audio("https://dl.dropboxusercontent.com/scl/fi/343hmi6y6inp6l7vexjzo/The-Girl-From-Ipanema-Instrumental.mp3?rlkey=ikfouvjgieep1zt0n2zmmkvop&st=lh2y0cxi&dl=1");
 backgroundAudio.loop = true;
 backgroundAudio.volume = 0.2; // nice and quiet
 
