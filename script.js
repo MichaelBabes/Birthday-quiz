@@ -191,7 +191,7 @@ function nextQuestion() {
         <div id="birthday-note" class="note-container">
           Dearest Ece,<br><br>
           <br><br> I know you're currently buried under academic chaos, but let’s not forget—today’s about you, not citations or formatting nightmares. You’ve made it this far with sheer brainpower, petty spite, and an unhealthy amount of tiramisu dreams. Respect.
-          <br><br> May your paragraphs behave, your procrastination be productive, and your thesis end with fewer tears than expected. You’re doing amazing—even if your laptop disagrees.
+          <br><br> May your paragraphs behave, your procrastination be productive, and your thesis end with fewer tears than expected. You’re doing amazing—even if your tablet disagrees.
           <br><br> Now go enjoy your day. You’ve earned it (and maybe even a nap).
           <br><br> —Luka (still me, unfortunately)
         </div>
@@ -235,19 +235,13 @@ function nextQuestion() {
           </div>
           <div id="lukas-wishes" class="note-container">
             <strong>Dear Ece,</strong><br><br>
-            Here's a special birthday surprise just for you: <a href="YOUR_SPECIAL_LINK_HERE" target="_blank">🎁 Click to see your special surprise! 🎁</a><br><br>
-            My wishes for you shine brighter than the stars...<br>
-            Each thought carefully crafted with love,<br>
-            Like golden threads weaving through time.<br><br>
-            Through every challenge and triumph,<br>
-            Your strength never ceases to amaze.<br>
-            Your laughter lights up the darkest rooms,<br>
-            And your determination moves mountains.<br><br>
-            [ADD YOUR PERSONAL MESSAGE HERE]<br><br>
-            P.S. Remember that time when... [ADD SPECIAL MEMORY HERE]<br>
-            Keep being amazing!<br><br>
-            With love,<br>
-            Luka 🎉🐕
+            Okay, fine — I will <em>begrudgingly</em> admit that you are one of the most impressive people I know.<br><br>
+            You juggle your thesis, life, and existential crises with such chaotic grace that it’s honestly admirable. Even when you act like a grandma with your tea mug or try to gaslight me into thinking tiramisu is a meal — you still somehow pull it off.<br><br>
+            I hope today you feel even a fraction of the love, respect, and warmth you bring to everyone around you. You deserve to be celebrated — not just because it's your birthday, but because you make life better just by being in it.<br><br>
+            Now go have the best birthday ever (or at least better than your caffeine intake suggests you will).<br><br>
+            With all my admiration and just a bit of smugness,<br>
+            <strong>Luka</strong>
+
           </div>
         </div>
       </div>`;
