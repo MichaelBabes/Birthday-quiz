@@ -67,6 +67,19 @@ window.backgroundAudio = new Audio("https://raw.githubusercontent.com/MichaelBab
 backgroundAudio.loop = true;
 backgroundAudio.volume = 0.2; // nice and quiet
 
+// == Luka’s voice message hookup ==
+const voiceAudio = new Audio("https://raw.githubusercontent.com/MichaelBabes/birthday-music/raw/refs/heads/main/2025-04-26%2014-13-37.mp3");
+voiceAudio.volume = 0.8;
+
+document.addEventListener("click", function onDocClick(e) {
+  if (e.target && e.target.id === "play-voice-btn") {
+    voiceAudio.play();
+    e.target.disabled = true;
+    e.target.textContent = "🔊 Playing…";
+    document.removeEventListener("click", onDocClick);
+  }
+});
+
 function toggleNote(id) {
   const element = document.getElementById(id);
   element.classList.toggle('visible');
@@ -232,7 +245,7 @@ function nextQuestion() {
 
         <div id="secret-area">
           <div class="note" onclick="showPasswordPrompt()">
-            🔒 Luka's Wishes (Password Protected)
+            🔒 Luka's Wishes
           </div>
           <div id="password-prompt" class="password-prompt">
             <p>Hint: What's my favourite labrador's name? 🐕</p>
@@ -247,7 +260,7 @@ function nextQuestion() {
             Now go have the best birthday ever (or at least better than your caffeine intake suggests you will).<br><br>
             With all my admiration and just a bit of smugness,<br>
             <strong>Luka</strong>
-
+            <button id="play-voice-btn">▶️ Play Luka’s Voice Message</button><br><br>
           </div>
         </div>
       </div>`;
