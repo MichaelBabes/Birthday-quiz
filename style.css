@@ -25,7 +25,7 @@ button {
 
 .dark-theme {
   --bg-color: #1e1e2f;
-  --text-color: #f1e9db;
+  --text-color: #d4b200;
   background-image: url('https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg');
   background-size: cover;
   background-blend-mode: overlay;
