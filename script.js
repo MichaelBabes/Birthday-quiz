@@ -57,6 +57,13 @@ const questions = [
 let currentQ = 0;
 let score = 0;
 
+const playMusicButton = document.getElementById('play-music-btn');
+
+playMusicButton.addEventListener('click', () => {
+  backgroundAudio.play();
+  playMusicButton.style.display = 'none'; // Hide the button after starting
+});
+
 const backgroundAudio = new Audio("https://github.com/MichaelBabes/birthday-music/raw/refs/heads/main/The%20Girl%20From%20Ipanema%20(Instrumental).mp3");
 backgroundAudio.loop = true;
 backgroundAudio.volume = 0.2; // nice and quiet
