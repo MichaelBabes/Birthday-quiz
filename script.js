@@ -252,16 +252,15 @@ function nextQuestion() {
             With all my admiration and just a bit of smugness,<br>
             <strong>Luka</strong>
             <button id="play-voice-btn">▶️ Play Luka’s Voice Message</button><br><br>
-            
-            const playVoiceBtn = document.getElementById('play-voice-btn');
-            playVoiceBtn.addEventListener('click', () => {
-              voiceAudio.play();
-              playVoiceBtn.disabled = true;
-              playVoiceBtn.textContent = '🔊 Playing…';
-            });
           </div>
         </div>
       </div>`;
+    const playVoiceBtn = document.getElementById('play-voice-btn');
+    playVoiceBtn.addEventListener('click', () => {
+      voiceAudio.play();
+      playVoiceBtn.disabled = true;
+      playVoiceBtn.textContent = '🔊 Playing…';
+    });
   } else {
     loadQuestion();
   }
